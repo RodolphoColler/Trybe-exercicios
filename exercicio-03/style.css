@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Cuprum";
+    font-size: 120px;
+    color: antiquewhite;
+    padding-top: 200px;
+}
+p{
+    font-family: "Caveat";
+    font-size: 35px;
+    color: antiquewhite;
+    padding-top: 90px;
+}
+button{
+    background-color: #17262d;
+    font-family: "Caveat";
+    font-size: 20px;
+    color: antiquewhite;
+    margin-top: 50px;
+    width: 150px;
+    height: 25px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.wallpaper{
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
+    height: 667px;
+    position: center;
+    text-align: center;
+}
+.selection{
+   padding-top: 0px;
+}
+.card{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 22px;
+    background-color: #273c58;
+    width: 300px;
+    height: 550px;
+    margin-left: 1000px;
+    position: relative;
+    bottom: 100px;
+    display: inline-block;
+
+    
+}
+img{
+    border-radius: 20px 20px 0 0;
+}
+.more-about{
+    background-color: #041732;
+    text-align: justify;
+    
+}
+.p1{
+    margin-left: 50px;
+    text-align: justify ;
+    padding-right: 600px;
+}
+.icons{
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+}
+.container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.container{
+    display: inline;
+}
