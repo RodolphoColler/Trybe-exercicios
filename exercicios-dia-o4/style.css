@@ -1,0 +1,9 @@
+.text{
+  color: blue;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#bodyColor{
+  background-color: rgb(13, 255, 45);
+}
