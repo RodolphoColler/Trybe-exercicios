@@ -64,16 +64,43 @@ const books = [
 ];
 
 const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
+  {
+    age: 31,
+    author: 'Isaac Asimov',
+  },
+  {
+    age: 38,
+    author: 'H. P. Lovecraft',
+  },
+  {
+    age: 39,
+    author: 'Stephen King',
+  },
+  {
+    age: 43,
+    author: 'George R. R. Martin',
+  },
+  {
+    age: 45,
+    author: 'Frank Herbert',
+  },
+  {
+    age: 62,
+    author: 'J. R. R. Tolkien',
+  },
 ];
 
-function formatedBookNames() {
-  return books.map( about => `${about.name} - ${about.genre} - ${about.author.name}`);
-}
+function nameAndAge() {
+  const crescentAge = books.sort((a, b) => {
+    const ageA = a.releaseYear - a.author.birthYear;
+    const ageB = b.releaseYear - b.author.birthYear;
+    if ((ageA) > (ageB)) return 1;
+    if ((ageA) < (ageB)) return -1;
+    return 0;
+  })
+ return crescentAge.map( e => e.author.name)
+};
+nameAndAge()
+// return crescentAge.map( e => `{ age: ${e.releaseYear - e.author.birthYear}, author: '${e.author.name}' }`)
 
-assert.deepStrictEqual(formatedBookNames(), expectedResult);
+assert.deepStrictEqual(nameAndAge(), expectedResult);
