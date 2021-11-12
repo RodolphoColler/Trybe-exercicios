@@ -1,0 +1,23 @@
+{
+  "name": "Trybe-exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodolphoColler/Trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodolphoColler/Trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/RodolphoColler/Trybe-exercicios#readme",
+  "dependencies": {
+    "redux": "^4.1.2"
+  }
+}
